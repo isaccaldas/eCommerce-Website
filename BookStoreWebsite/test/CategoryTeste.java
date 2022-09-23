@@ -2,17 +2,16 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
+import com.bookstore.entity.Category;
 import com.bookstore.entity.Users;
 
-public class UserTeste {
+public class CategoryTeste {
 
 	public static void main(String[] args) {
 
-		Users user1 = new Users();
-
-		user1.setEmail("teste2@teste.com2");
-		user1.setFullName("Isac Caldas22");
-		user1.setPassword("1234f");
+		Category cat = new Category();
+		
+		cat.setName("Java");
 
 		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("BookStoreWebsite");
 		EntityManager entityManager = entityManagerFactory.createEntityManager();
@@ -21,7 +20,7 @@ public class UserTeste {
 		entityManager.getTransaction().begin();
 
 		// persistindo um objeto usuario
-		entityManager.persist(user1);
+		entityManager.persist(cat);
 
 		// comitando a transaçao
 		entityManager.getTransaction().commit();
@@ -32,5 +31,6 @@ public class UserTeste {
 
 		System.out.println("Transação realizada com sucesso!");
 	}
-
+	
+	
 }
