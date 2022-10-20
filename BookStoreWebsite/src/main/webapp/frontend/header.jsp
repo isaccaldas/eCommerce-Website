@@ -1,4 +1,27 @@
  <div align="center">
-	<h1>this is the header: Logo, Serach, Menu</h1>
+
+	
+	<div>
+		<img alt="logo" src="images/BookstoreLogo.png">
+	</div>
+	
+	<div>
+		<input type="text" name="keyword" size="50" />
+		<input type="button" value="Search">
+		
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="login">Sign In</a> |
+		<a href="register">Register</a> |
+		<a href="view_cart">Cart</a>
+	</div>
+	
+	<div>
+	
+	
+	
+	
+	</div>
+	
+	
 </div>
 
