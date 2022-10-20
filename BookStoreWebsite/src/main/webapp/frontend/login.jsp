@@ -8,12 +8,10 @@
 </head>
 <body>
 
- <div align="center">
-	<h1>this is the header: Logo, Serach, Menu</h1>
-</div>
+<jsp:directive.include file="header.jsp"/>
 
 <div align="center">
-	<h1>this is the main conteiner </h1>
+	
 	<h2>Please Login</h2>
 	<form action="">
 		Email:    <input type="text" size="10"><br/>
@@ -22,9 +20,7 @@
 	</form>
 </div>
 
-<div align="center">
-	<h1>footer </h1>
-</div>
+ <jsp:directive.include file="footer.jsp"/>
 
 
 </body>
