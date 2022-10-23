@@ -11,7 +11,9 @@
  <jsp:directive.include file="header.jsp"/>
 
 <div align="center">
+    <br/><br/>
 	<h1>this is the main conteiner </h1>
+	<br/><br/>
 </div>
 
  <jsp:directive.include file="footer.jsp"/>
