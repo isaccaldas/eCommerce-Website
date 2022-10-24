@@ -2,30 +2,30 @@ package com.bookstore.dao;
 
 import javax.persistence.EntityManager;
 
-public class JpaDAO <T, E>{
+public class JpaDAO <E>{
 
 	protected EntityManager entityManager;
 
 	
-	public JpaDAO(EntityManager entityManager) {
+	public JpaDAO (EntityManager entityManager) {
 		super();
 		this.entityManager = entityManager;
 	} 
 	
 	
-	public T create(T t) {
+	public E create(E entity) {
 				
 		entityManager.getTransaction().begin();
 		
-		entityManager.persist(t);
+		entityManager.persist(entity);
 		
 		entityManager.flush();
 		
-		entityManager.refresh(t);
+		entityManager.refresh(entity);
 		
 		entityManager.getTransaction().commit();
 				
-		return t;
+		return entity;
 	}
 	
 	public E update(E entity) {
