@@ -2,7 +2,7 @@ package com.bookstore.dao;
 
 import javax.persistence.EntityManager;
 
-public class JpaDAO <T>{
+public class JpaDAO <T, E>{
 
 	protected EntityManager entityManager;
 
@@ -27,6 +27,20 @@ public class JpaDAO <T>{
 				
 		return t;
 	}
+	
+	public E update(E entity) {
+		
+		entityManager.getTransaction().begin();
+		
+		entity = entityManager.merge(entity);
+		
+		entityManager.getTransaction().commit();
+		
+		return entity;
+		
+	}
+	
+	
 	
 	
 	
