@@ -3,16 +3,16 @@
 		<img alt="logo" src="../images/BookstoreAdminLogo.png">
 	</div>
 	<div>
-		Welcome, Admin | <a href="logout">Logout</a>
+		Welcome, Admin | <a href="logout">Sair</a>
 	</div>
 	<br />
 	<div>
-		<b> <a href="users">Users</a> | 
-		    <a href="categories">Categories</a> | 
-		    <a href="books">Books</a> | 
-		    <a href="customers">Customers</a> | 
-		    <a href="reviews">Reviews</a> | 
-		    <a href="orders">Orders</a>
+		<b> <a href="users">Usuários</a> | 
+		    <a href="categories">Categorias</a> | 
+		    <a href="books">Livros</a> | 
+		    <a href="customers">Clientes</a> | 
+		    <a href="reviews">Análises</a> | 
+		    <a href="orders">Pedidos</a>
 		</b>
 	</div>
 
